@@ -30,14 +30,10 @@ class _ProcessingPageState extends State<ProcessingPage>
     controller = AnimationController(
       value: 0.0,
       vsync: this,
-      //duration: const Duration(seconds: 5),
     )..addListener(() {
         setState(() {});
       });
     shortestPath = _calculatePath(widget.data);
-    //_sendToValidateResults()
-
-    //controller.repeat(reverse: true);
     super.initState();
   }
 
